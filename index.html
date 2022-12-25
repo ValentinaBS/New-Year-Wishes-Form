@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="icon" href="/images/favicon.png">
+        <title>New Year Wishes</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">New Year Wishes Form</h1>
+            <p id="description">Happy New Year! 2023 is the beginning of a new chapter. This is your year. Make it happen.</p>
+        </header>
+        <div class="container">
+            <form id="survey-form">
+                <div class="form-group">
+                    <h2><span>✳</span>  Let's get to know you first!</h2>
+                    <label id="name-label">
+                        Name
+                        <input 
+                            id="name" 
+                            type="text" 
+                            placeholder="Jane Doe" 
+                            required>
+                    </label>
+                    <label id="email-label">
+                        Email 
+                        <input 
+                            id="email" 
+                            type="email" 
+                            placeholder="example@gmail.com" 
+                            required>
+                    </label>
+                    <label id="number-label">
+                        Age 
+                        <input 
+                            id="number" 
+                            type="number" 
+                            placeholder="20" 
+                            min="13" 
+                            max="100" 
+                            required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <h2><span>✳</span>  Let's see how and with whom you spend the new year... </h2>
+                    <p>What emotion describes how you felt this year the most? (optional)</p>
+                    <label for="dropdown">
+                        <select id="dropdown">
+                            <option value="">Select an emotion</option>
+                            <option value="1">Happiness</option>
+                            <option value="2">Sadness</option>
+                            <option value="3">Angriness</option>
+                            <option value="4">Excitedness</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>How excited are you for the upcoming year? (optional)</p>
+                    <label for="not-excited" class="form-control">
+                        <input 
+                            id="not-excited" 
+                            type="radio" 
+                            name="excitedness" 
+                            value="0"> Not excited at all
+                        </input>
+                    </label>
+                    <label for="dont-care" class="form-control">
+                        <input 
+                            id="dont-care" 
+                            type="radio" 
+                            name="excitedness" 
+                            value="1"> Don't care
+                        </input>
+                    </label>
+                    <label for="very-excited" class="form-control">
+                        <input 
+                            id="very-excited" 
+                            type="radio" 
+                            name="excitedness" 
+                            value="2"> Very excited
+                        </input>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Who will you spend New Years with? (optional)</p>
+                    <label class="form-control">
+                        <input type="checkbox" value="1"> Family</input>
+                        </label>
+                        <label class="form-control">
+                        <input type="checkbox" value="2"> Friends</input>
+                        </label>
+                        <label class="form-control">
+                        <input type="checkbox" value="3"> Pets</input>
+                        </label>
+                        <label class="form-control">
+                        <input type="checkbox" value="4"> By myself</input>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <h2><span>✳</span>  
+                    Now, into the main question...</h2>
+                    <p>What are your New Years wishes?</p>
+                    <textarea placeholder="1. I'd like to buy my first car..." required></textarea>
+                </div>
+                <input type="submit" id="submit" value="Submit my wishes! 🌠">
+            </form>
+        </div>
+    </body>
+</html>
