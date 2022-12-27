@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: Poppins, sans-serif;
 }
 
@@ -9,10 +10,8 @@ body {
         115deg,
         rgba(0, 0, 0, 0.8),
         rgba(136, 136, 220, 0.7)
-), url(https://cdn.pixabay.com/photo/2014/12/21/07/49/fireworks-574739_960_720.jpg);
+), url("/images/bg.svg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     color: #f3f3f3;
 }
 
@@ -22,7 +21,7 @@ header {
 }
 
 .container {
-    width: 550px;
+    width: 90%;
     border-radius: 5px;
     background-color: #2c2f33;
     padding: 20px 50px 30px;
@@ -62,7 +61,9 @@ label {
     display: inline-block;
 }
 
-.form-control {
+/*Radio buttons and Checkboxes*/
+
+.form-control-options {
     font-weight: semi-bold;
     line-height: 1.1;
     display: grid;
@@ -105,6 +106,8 @@ input[type="radio"]:checked::before, input[type="checkbox"]:checked::before {
     transform: scale(1);
 }
 
+/*Wishes and Submit*/
+
 textarea {
     width: 100%;
     height: 200px;
@@ -125,4 +128,11 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #384882;
     color: #f3f3f3;
+}
+
+/*Responsive*/
+@media only screen and (min-width: 600px) {
+    .container { 
+        max-width: 600px;
+    }
 }
